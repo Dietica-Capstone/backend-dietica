@@ -10,7 +10,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(log);
 
 app.use(authRoutes);
-app.use(forumRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello this is Dietica API");
